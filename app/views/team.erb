@@ -1,3 +1,12 @@
+require 'pry'
+<%= @team.name %>
+<%= Team Motto: @team.motto %>
 
+<% @member.each do |m| %>
+    binding.pry
+    <%= Hero Name: m.name %>
+    <%= Hero Power: m.power %>
+    <%= Hero Bio: m.bio %>
+    <% end %>
 
 
