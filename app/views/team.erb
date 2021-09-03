@@ -1,12 +1,13 @@
-require 'pry'
-<%= @team.name %>
-<%= @team.motto %>
+
+
+<h1><%= @team.name %></h1>
+<p>Team Motto: <%= @team.motto %></p>
 
 <% @member.each do |m| %>
 
-    <%= Hero Name: m.name %>
-    <%= Hero Power: m.power %>
-    <%= Hero Bio: m.bio %>
+    <h1>Hero Name: <%= m.name %></h1>
+    <p>Hero Power: <%= m.power %></p>
+    <p>Hero Biography: <%= m.bio %></p>
     <% end %>
 
 
